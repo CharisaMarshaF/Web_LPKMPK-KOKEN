@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>LPK MPK-KOKEN - Pelatihan dan Penyaluran Kerja ke Jepang</title>
 
@@ -89,8 +90,8 @@
     <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="assets/vendor/glightbox/css/glightbox.css">
     <link rel="stylesheet" type="text/css" href="assets/vendor/choices/css/choices.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/vendor/tiny-slider/tiny-slider.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendor/tiny-slider/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.min.css" />
 
     <!-- Theme CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -105,10 +106,10 @@
             <div class="container">
                 <!-- Logo START -->
                 <a class="navbar-brand" href="index.html">
-                    <img class="light-mode-item navbar-brand-item" src="assets/img/fulllogo_bg.png" alt="logo"
-                        style="height: 40px;">
-                    <img class="dark-mode-item navbar-brand-item" src="assets/img/fulllogo_bg.png" alt="logo"
-                        style="height: 40px;">
+                    <img class="light-mode-item navbar-brand-item" src="assets/img/logoasli.png" alt="logo"
+                        style="height: 60px;">
+                    <img class="dark-mode-item navbar-brand-item" src="assets/img/logoasli.png" alt="logo"
+                        style="height: 60px;">
                 </a>
 
                 <!-- Logo END -->
@@ -129,7 +130,8 @@
                     <!-- Nav Main menu START -->
                     <ul class="navbar-nav mx-auto text-center">
                         <li class="nav-item ">
-                            <a class="nav-link active" href="index.html"><i class="bi bi-speedometer2 me-2"></i> Dashboard</a>
+                            <a class="nav-link active" href="index.html"><i class="bi bi-speedometer2 me-2"></i>
+                                Dashboard</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html"><i class="bi bi-person-circle me-2"></i> Profile</a>
@@ -281,8 +283,6 @@ Main Banner END -->
             setInterval(showNextSlide, 5000); // ganti slide tiap 6 detik
         </script>
 
-
-
         <!-- =======================
 About START -->
         <section class="pt-0 pt-md-5">
@@ -407,6 +407,161 @@ About START -->
         <!-- =======================
 About END -->
 
+
+        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+        <style>
+            .process-section {
+                position: relative;
+            }
+
+
+            .process-flow {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 30px;
+                margin-top: 60px;
+                position: relative;
+            }
+
+            .process-step {
+                background: linear-gradient(135deg, #ffffff, #e9f3ff);
+                border-left: 5px solid #1c355e;
+                border-radius: 15px;
+                padding: 30px;
+                max-width: 280px;
+                width: 100%;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+                position: relative;
+                z-index: 1;
+            }
+
+            .process-step h5 {
+                font-weight: 600;
+                color: #1c355e;
+            }
+
+            .process-step .number {
+                position: absolute;
+                top: -20px;
+                left: -20px;
+                background: #1c355e;
+                color: white;
+                font-weight: bold;
+                padding: 10px 18px;
+                border-radius: 50px;
+                font-size: 1rem;
+                z-index: 2;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            }
+
+            .arrow-connector {
+                width: 40px;
+                height: 40px;
+                background: url('https://cdn-icons-png.flaticon.com/512/545/545682.png') no-repeat center;
+                background-size: contain;
+                align-self: center;
+            }
+
+            @media (max-width: 767px) {
+                .process-flow {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .arrow-connector {
+                    transform: rotate(90deg);
+                }
+            }
+        </style>
+
+        <section class="pt-0 pt-md-5 process-section">
+            <div class="container">
+                <!-- <div class="text-center" data-aos="fade-up">
+                <h2 class="process-title">Siap wujudkan impianmu ke Jepang?</h2>
+                </div>   -->
+                <div class="row mb-3 mb-sm-4">
+                    <div class="col-12 mx-auto text-center">
+                        <h2 class="fs-1 fw-bold" data-aos="fade-up">
+                            <span class="position-relative z-index-9">Alur Keberangkatan</span>
+                            <span class="position-relative z-index-1"> ke Jepang
+                                <!-- SVG START -->
+                                <span
+                                    class="position-absolute top-50 start-50 translate-middle z-index-n1 d-none d-sm-block">
+                                    <svg class="fill-primary" width="250" height="86" viewBox="0 0 303 86">
+                                        <path
+                                            d="M288.197 19.3999C281.599 15.6998 273.654 13.03 265.424 10.926C256.533 8.64794 247.263 6.92124 237.946 5.4267C218.461 2.249 198.384 0.406219 178.237 0.0579769C158.609 -0.275755 138.888 0.8125 119.733 3.49686C108.17 5.10748 96.8189 7.2985 85.8466 10.0264C81.4955 11.0131 77.168 12.0723 72.9115 13.2331C56.382 17.7022 40.5146 23.4192 26.3972 30.355C12.9182 36.9861 0.716203 46.0404 0.999971 57.2131C1.14185 62.2772 4.16871 67.051 9.98595 70.693C15.4721 74.1319 22.6846 76.3809 29.9679 78.0206C38.7647 80.0085 48.0345 81.3289 57.257 82.4026C67.1179 83.5489 77.0734 84.2889 87.0762 84.6807C107.413 85.4642 127.892 84.7968 148.063 83.0266C168.399 81.2418 188.429 78.3543 208.127 74.8139C227.399 71.3459 246.436 67.2976 265.141 62.8285C278.927 59.5348 294.227 55.0802 300.446 46.2435C307.091 36.812 299.949 25.973 288.197 19.3999ZM298.862 46.7804C295.48 50.9593 289.592 54.0935 283.207 56.4876C276.633 58.9543 269.468 60.7391 262.279 62.4077C252.915 64.5843 243.503 66.6737 234.044 68.6616C215.174 72.6083 196.019 76.0762 176.534 78.7171C157.191 81.3289 137.54 83.0991 117.747 83.6505C97.9304 84.2019 77.9957 83.5634 58.4866 81.3289C49.5243 80.2987 40.5146 79.0363 31.907 77.1645C24.5764 75.5829 17.3403 73.4499 11.6649 70.1126C5.49296 66.4561 2.15869 61.5226 2.22963 56.2555C2.32422 50.7417 5.72943 45.489 10.9555 41.0489C16.1106 36.6959 22.7319 33.0974 29.6842 29.8472C36.2108 26.8145 43.0213 24.0141 50.0918 21.4748C48.4601 22.1278 46.8521 22.7953 45.2678 23.4772C37.7716 26.684 30.4409 30.1664 23.9615 34.1131C17.695 37.9438 12.1615 42.3839 9.30018 47.5785C6.55709 52.5554 6.10779 58.1853 9.77313 63.0462C13.0838 67.4427 19.303 70.7655 26.279 72.8985C34.6974 75.4813 44.2036 76.2358 53.497 76.381C63.8309 76.5406 74.2357 76.1488 84.5696 75.757C95.0454 75.3652 105.497 74.7993 115.926 74.0884C136.783 72.6664 157.545 70.6204 178.071 67.9361C187.956 66.6447 197.817 65.2227 207.583 63.6411C208.269 63.525 208.718 62.3642 208.009 62.4658C188.358 65.629 168.447 68.2118 148.394 70.2142C128.435 72.202 108.312 73.624 88.1404 74.4366C78.0666 74.8429 67.9219 75.1911 57.8008 75.2056C48.3419 75.2201 38.6465 74.7558 29.8261 72.5068C22.5427 70.6785 15.8032 67.6169 11.8777 63.3509C7.33745 58.4175 7.52663 52.4393 10.6481 47.2302C13.7695 41.9776 19.7523 37.581 26.3263 33.8084C32.7583 30.1083 39.8289 26.7855 47.1359 23.7529C59.2197 18.7034 72.2257 14.4955 85.7756 11.1292C90.7889 9.99737 95.8494 8.98167 100.981 8.08205C117.96 5.07846 135.553 3.32274 153.218 2.88744C161.754 2.66979 170.315 2.78587 178.851 3.19215C179.537 3.22117 180.128 2.06037 179.277 2.01684C167.69 1.45094 156.032 1.47996 144.468 2.06037C145.745 1.97331 146.999 1.88625 148.275 1.8137C167.879 0.6674 187.696 1.04466 207.157 2.78587C226.075 4.46904 245.111 7.25497 262.894 11.608C278.714 15.4677 294.085 21.6635 299.808 32.0092C302.456 36.812 302.574 42.1662 298.862 46.7804Z" />
+                                    </svg>
+                                </span>
+                                <!-- SVG END -->
+                            </span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="process-flow mt-5">
+                    <!-- STEP 01 -->
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                        <div class="number">01</div>
+                        <h5>Registrasi</h5>
+                        <p>Calon peserta magang masuk ke sekolah bahasa Jepang (offline/online) di wilayah lokal.</p>
+                    </div>
+
+                    <div class="arrow-connector d-none d-md-block"></div>
+
+                    <!-- STEP 02 -->
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                        <div class="number">02</div>
+                        <h5>Lowongan Masuk</h5>
+                        <p>Lowongan pekerjaan dikirim dari perusahaan ke sekolah Jepang mitra untuk rekrutmen.</p>
+                    </div>
+
+                    <div class="arrow-connector d-none d-md-block"></div>
+
+                    <!-- STEP 03 -->
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                        <div class="number">03</div>
+                        <h5>Seleksi Awal</h5>
+                        <p>Seleksi tahap 1 dilakukan untuk menentukan kandidat wawancara.</p>
+                    </div>
+
+                    <div class="arrow-connector d-none d-md-block"></div>
+
+                    <!-- STEP 04 -->
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                        <div class="number">04</div>
+                        <h5>Wawancara</h5>
+                        <p>Wawancara bersama perusahaan dan lembaga pengawas. Biasanya kandidat sudah belajar bahasa
+                            Jepang.</p>
+                    </div>
+
+                    <div class="arrow-connector d-none d-md-block"></div>
+
+                    <!-- STEP 05 -->
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="500">
+                        <div class="number">05</div>
+                        <h5>Belajar Lanjutan</h5>
+                        <p>Kandidat yang lolos wawancara belajar ±4 bulan di sekolah kami sebagai persiapan
+                            keberangkatan.</p>
+                    </div>
+
+                    <div class="arrow-connector d-none d-md-block"></div>
+
+                    <!-- STEP 06 -->
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="600">
+                        <div class="number">06</div>
+                        <h5>Keberangkatan</h5>
+                        <p>Pengurusan VISA dan prosedur selesai, peserta resmi berangkat ke Jepang.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
         <!-- =======================
 Action box START-->
         <section class="pt-0 pt-md-6">
@@ -469,101 +624,184 @@ Action box START-->
         </section>
         <!-- =======================
 Action box END-->
-<!-- =======================
+        <!-- =======================
+Video divider START -->
+        <section class=" pt-0 pt-md-6 position-relative">
+            <!-- SVG decoration -->
+            <figure class="position-absolute bottom-0 start-0 d-none d-lg-block">
+                <svg width="822.2px" height="301.9px" viewBox="0 0 822.2 301.9">
+                    <path class="fill-info"
+                        d="M752.5,51.9c-4.5,3.9-8.9,7.8-13.4,11.8c-51.5,45.3-104.8,92.2-171.7,101.4c-39.9,5.5-80.2-3.4-119.2-12.1 c-32.3-7.2-65.6-14.6-98.9-13.9c-66.5,1.3-128.9,35.2-175.7,64.6c-11.9,7.5-23.9,15.3-35.5,22.8c-40.5,26.4-82.5,53.8-128.4,70.7 c-2.1,0.8-4.2,1.5-6.2,2.2L0,301.9c3.3-1.1,6.7-2.3,10.2-3.5c46.1-17,88.1-44.4,128.7-70.9c11.6-7.6,23.6-15.4,35.4-22.8 c46.7-29.3,108.9-63.1,175.1-64.4c33.1-0.6,66.4,6.8,98.6,13.9c39.1,8.7,79.6,17.7,119.7,12.1C634.8,157,688.3,110,740,64.6 c4.5-3.9,9-7.9,13.4-11.8C773.8,35,797,16.4,822.2,1l-0.7-1C796.2,15.4,773,34,752.5,51.9z" />
+                </svg>
+            </figure>
+
+            <!-- SVG decoration -->
+            <figure class="position-absolute top-0 end-0">
+                <svg width="822.2px" height="301.9px" viewBox="0 0 822.2 301.9">
+                    <path class="fill-primary"
+                        d="M752.5,51.9c-4.5,3.9-8.9,7.8-13.4,11.8c-51.5,45.3-104.8,92.2-171.7,101.4c-39.9,5.5-80.2-3.4-119.2-12.1 c-32.3-7.2-65.6-14.6-98.9-13.9c-66.5,1.3-128.9,35.2-175.7,64.6c-11.9,7.5-23.9,15.3-35.5,22.8c-40.5,26.4-82.5,53.8-128.4,70.7 c-2.1,0.8-4.2,1.5-6.2,2.2L0,301.9c3.3-1.1,6.7-2.3,10.2-3.5c46.1-17,88.1-44.4,128.7-70.9c11.6-7.6,23.6-15.4,35.4-22.8 c46.7-29.3,108.9-63.1,175.1-64.4c33.1-0.6,66.4,6.8,98.6,13.9c39.1,8.7,79.6,17.7,119.7,12.1C634.8,157,688.3,110,740,64.6 c4.5-3.9,9-7.9,13.4-11.8C773.8,35,797,16.4,822.2,1l-0.7-1C796.2,15.4,773,34,752.5,51.9z" />
+                </svg>
+            </figure>
+
+            <!-- SVG decoration -->
+            <figure class="position-absolute bottom-0 start-50 translate-middle-x ms-n9 mb-5">
+                <svg width="23px" height="23px">
+                    <path class="fill-info"
+                        d="M23.003,11.501 C23.003,17.854 17.853,23.003 11.501,23.003 C5.149,23.003 -0.001,17.854 -0.001,11.501 C-0.001,5.149 5.149,-0.000 11.501,-0.000 C17.853,-0.000 23.003,5.149 23.003,11.501 Z">
+                    </path>
+                </svg>
+            </figure>
+
+            <!-- SVG decoration -->
+            <figure class="position-absolute bottom-0 end-0 me-5 mb-5">
+                <svg width="22px" height="22px">
+                    <path class="fill-primary"
+                        d="M22.003,11.001 C22.003,17.078 17.077,22.003 11.001,22.003 C4.925,22.003 -0.001,17.078 -0.001,11.001 C-0.001,4.925 4.925,-0.000 11.001,-0.000 C17.077,-0.000 22.003,4.925 22.003,11.001 Z">
+                    </path>
+                </svg>
+            </figure>
+
+            <div class="container position-relative">
+                <div class="row justify-content-between align-items-center my-5">
+
+                    <div class="col-lg-5 position-relative">
+                        <!-- SVG decoration -->
+                        <figure class="position-absolute top-0 start-0 translate-middle mt-n5">
+                            <svg width="29px" height="29px">
+                                <path class="fill-info"
+                                    d="M29.004,14.502 C29.004,22.512 22.511,29.004 14.502,29.004 C6.492,29.004 -0.001,22.512 -0.001,14.502 C-0.001,6.492 6.492,-0.001 14.502,-0.001 C22.511,-0.001 29.004,6.492 29.004,14.502 Z">
+                                </path>
+                            </svg>
+                        </figure>
+
+                        <!-- Title -->
+                        <h2 class="h1">Yuk intip serunya belajar & persiapan magang ke Jepang!</h2>
+                    </div>
+
+                    <div class="col-lg-7 position-relative mt-4 mt-lg-0">
+                        <!-- TikTok Creator Embed -->
+                        <div class="border border-5 border-white rounded-2 overflow-hidden">
+                            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@lpkmpk_koken"
+                                data-unique-id="lpkmpk_koken" data-embed-from="embed_page" data-embed-type="creator"
+                                style="max-width:100%; min-width:288px; height:100%; margin:0 auto;">
+                                <section>
+                                    <a target="_blank"
+                                        href="https://www.tiktok.com/@lpkmpk_koken?refer=creator_embed">@lpkmpk_koken</a>
+                                </section>
+                            </blockquote>
+                        </div>
+
+                        <script async src="https://www.tiktok.com/embed.js"></script>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- =======================
+Video divider END -->
+
+        <!-- =======================
 Testimoni Peserta START -->
-<section class="position-relative">
-  <div class="container">
-    <!-- Title -->
-    <div class="row mb-4">
-      <div class="col-lg-8 mx-auto text-center">
-        <h2>Testimoni Alumni</h2>
-        <p class="mb-0">Cerita nyata dari mereka yang sudah meraih impiannya bersama MPK-KOKEN</p>
-      </div>
-    </div>
+        <section class="position-relative">
+            <div class="container">
+                <!-- Title -->
+                <div class="row mb-4">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2>Testimoni Alumni</h2>
+                        <p class="mb-0">Cerita nyata dari mereka yang sudah meraih impiannya bersama MPK-KOKEN</p>
+                    </div>
+                </div>
 
-    <!-- Feedback START -->
-    <div class="row">
-      <div class="tiny-slider arrow-round arrow-creative arrow-dark arrow-hover">
-        <div class="tiny-slider-inner" data-autoplay="true" data-edge="5" data-arrow="true" data-dots="false" data-items="3" data-items-xl="3" data-items-md="2" data-items-xs="1">
+                <!-- Feedback START -->
+                <div class="row">
+                    <div class="tiny-slider arrow-round arrow-creative arrow-dark arrow-hover">
+                        <div class="tiny-slider-inner" data-autoplay="true" data-edge="5" data-arrow="true"
+                            data-dots="false" data-items="3" data-items-xl="3" data-items-md="2" data-items-xs="1">
 
-          <!-- Testimoni 1 -->
-          <div>
-            <div class="testimonial-card p-4 rounded-4 border text-center">
-              <h6 class="mb-2">Aulia Rahma</h6>
-              <blockquote class="mt-1">
-                <p class="fst-italic mb-0">
-                  <i class="fas fa-quote-left me-2"></i>
-                  "Belajar di MPK-KOKEN benar-benar membuka jalan saya ke Jepang. Suasana belajarnya intensif dan penuh dukungan."
-                  <i class="fas fa-quote-right ms-2"></i>
-                </p>
-              </blockquote>
+                            <!-- Testimoni 1 -->
+                            <div>
+                                <div class="testimonial-card p-4 rounded-4 border text-center">
+                                    <h6 class="mb-2">Aulia Rahma</h6>
+                                    <blockquote class="mt-1">
+                                        <p class="fst-italic mb-0">
+                                            <i class="fas fa-quote-left me-2"></i>
+                                            "Belajar di MPK-KOKEN benar-benar membuka jalan saya ke Jepang. Suasana
+                                            belajarnya intensif dan penuh dukungan."
+                                            <i class="fas fa-quote-right ms-2"></i>
+                                        </p>
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                            <!-- Testimoni 2 -->
+                            <div>
+                                <div class="testimonial-card p-4 rounded-4 border text-center">
+                                    <h6 class="mb-2">Rizki Maulana</h6>
+                                    <blockquote class="mt-1">
+                                        <p class="fst-italic mb-0">
+                                            <i class="fas fa-quote-left me-2"></i>
+                                            "Saya diterima magang di Jepang! Terima kasih untuk bimbingan dan semangat
+                                            dari para sensei di sini!"
+                                            <i class="fas fa-quote-right ms-2"></i>
+                                        </p>
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                            <!-- Testimoni 3 -->
+                            <div>
+                                <div class="testimonial-card p-4 rounded-4 border text-center">
+                                    <h6 class="mb-2">Dewi Ayunda</h6>
+                                    <blockquote class="mt-1">
+                                        <p class="fst-italic mb-0">
+                                            <i class="fas fa-quote-left me-2"></i>
+                                            "Selain bahasa Jepang, saya juga belajar disiplin dan budaya kerja. Ini
+                                            pengalaman hidup yang sangat berharga."
+                                            <i class="fas fa-quote-right ms-2"></i>
+                                        </p>
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                            <!-- Testimoni 4 -->
+                            <div>
+                                <div class="testimonial-card p-4 rounded-4 border text-center">
+                                    <h6 class="mb-2">Aditya Wira</h6>
+                                    <blockquote class="mt-1">
+                                        <p class="fst-italic mb-0">
+                                            <i class="fas fa-quote-left me-2"></i>
+                                            "Awalnya ragu, tapi sekarang saya bersyukur sudah jadi bagian dari keluarga
+                                            MPK-KOKEN. Prosesnya jelas dan aman!"
+                                            <i class="fas fa-quote-right ms-2"></i>
+                                        </p>
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Feedback END -->
             </div>
-          </div>
-
-          <!-- Testimoni 2 -->
-          <div>
-            <div class="testimonial-card p-4 rounded-4 border text-center">
-              <h6 class="mb-2">Rizki Maulana</h6>
-              <blockquote class="mt-1">
-                <p class="fst-italic mb-0">
-                  <i class="fas fa-quote-left me-2"></i>
-                  "Saya diterima magang di Jepang! Terima kasih untuk bimbingan dan semangat dari para sensei di sini!"
-                  <i class="fas fa-quote-right ms-2"></i>
-                </p>
-              </blockquote>
-            </div>
-          </div>
-
-          <!-- Testimoni 3 -->
-          <div>
-            <div class="testimonial-card p-4 rounded-4 border text-center">
-              <h6 class="mb-2">Dewi Ayunda</h6>
-              <blockquote class="mt-1">
-                <p class="fst-italic mb-0">
-                  <i class="fas fa-quote-left me-2"></i>
-                  "Selain bahasa Jepang, saya juga belajar disiplin dan budaya kerja. Ini pengalaman hidup yang sangat berharga."
-                  <i class="fas fa-quote-right ms-2"></i>
-                </p>
-              </blockquote>
-            </div>
-          </div>
-
-          <!-- Testimoni 4 -->
-          <div>
-            <div class="testimonial-card p-4 rounded-4 border text-center">
-              <h6 class="mb-2">Aditya Wira</h6>
-              <blockquote class="mt-1">
-                <p class="fst-italic mb-0">
-                  <i class="fas fa-quote-left me-2"></i>
-                  "Awalnya ragu, tapi sekarang saya bersyukur sudah jadi bagian dari keluarga MPK-KOKEN. Prosesnya jelas dan aman!"
-                  <i class="fas fa-quote-right ms-2"></i>
-                </p>
-              </blockquote>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!-- Feedback END -->
-  </div>
-</section>
-<!-- =======================
+        </section>
+        <!-- =======================
 Testimoni Peserta END -->
 
-<!-- Tambahkan style berikut -->
-<style>
-  .testimonial-card {
-    background-color: #fff;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* efek timbul halus */
-  }
+        <!-- Tambahkan style berikut -->
+        <style>
+            .testimonial-card {
+                background-color: #fff;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+                /* efek timbul halus */
+            }
 
-  .testimonial-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* efek mengangkat saat hover */
-  }
-</style>
+            .testimonial-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                /* efek mengangkat saat hover */
+            }
+        </style>
 
         <!-- =======================
 Gallery START-->
@@ -725,50 +963,50 @@ Gallery START-->
 
     </main>
     <!-- **************** MAIN CONTENT END **************** -->
-    
-<!-- =======================
+
+    <!-- =======================
 Footer START -->
-<footer class=" bg-light p-3">
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Logo -->
-      <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
-        <a href="index.html">
-          <img style="height: 30px;" src="assets/img/fulllogo_bg.png" alt="logo">
-        </a>
-      </div>
+    <footer class=" bg-light p-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Logo -->
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <a href="index.html">
+                        <img style="height: 30px;" src="assets/img/fulllogo_bg.png" alt="logo">
+                    </a>
+                </div>
 
-      <!-- Copyright -->
-      <div class="col-md-4 mb-3 mb-md-0">
-        <div class="text-center text-primary-hover">
-           © 2025 LPK MPK-KOKEN. All rights reserved.
+                <!-- Copyright -->
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="text-center text-primary-hover">
+                        © 2025 LPK MPK-KOKEN. All rights reserved.
+                    </div>
+                </div>
+
+                <!-- Social media -->
+                <div class="col-md-4">
+                    <ul class="list-inline mb-0 text-center text-md-end">
+                        <li class="list-inline-item ms-2">
+                            <a href="https://www.facebook.com/lpkmpkkoken?mibextid=wwXIfr" target="_blank">
+                                <i class="text-black fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item ms-2">
+                            <a href="https://www.instagram.com/lpkmpk_koken?igsh=ZHI4Y3M0Y3Bpamoz" target="_blank">
+                                <i class="text-black fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item ms-2">
+                            <a href="https://www.tiktok.com/@lpkmpk_koken?_t=ZS-8xbpaFofPD5&_r=1" target="_blank">
+                                <i class="text-black fab fa-tiktok"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <!-- Social media -->
-      <div class="col-md-4">
-        <ul class="list-inline mb-0 text-center text-md-end">
-          <li class="list-inline-item ms-2">
-            <a href="https://www.facebook.com/lpkmpkkoken?mibextid=wwXIfr" target="_blank">
-              <i class="text-black fab fa-facebook"></i>
-            </a>
-          </li>
-          <li class="list-inline-item ms-2">
-            <a href="https://www.instagram.com/lpkmpk_koken?igsh=ZHI4Y3M0Y3Bpamoz" target="_blank">
-              <i class="text-black fab fa-instagram"></i>
-            </a>
-          </li>
-          <li class="list-inline-item ms-2">
-            <a href="https://www.tiktok.com/@lpkmpk_koken?_t=ZS-8xbpaFofPD5&_r=1" target="_blank">
-              <i class="text-black fab fa-tiktok"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- =======================
+    </footer>
+    <!-- =======================
 Footer END -->
 
 
@@ -777,22 +1015,22 @@ Footer END -->
 
     <!-- Admission alert box START -->
     <div class="alert alert-light alert-dismissible fade show position-fixed bottom-0 start-50 translate-middle-x z-index-99 d-lg-flex justify-content-between align-items-center shadow p-4 col-9 col-md-7 col-xxl-5"
-    role="alert">
-    <div>
-        <h4 class="text-dark">Pendaftaran Dibuka!</h4>
-        <p class="m-0 pe-3">Bergabunglah bersama kami di LPK MPK KOKEN dan raih kesempatan magang ke Jepang.</p>
-    </div>
-    <div class="d-flex mt-3 mt-lg-0">
-       <a href="https://wa.me/6285647523100" class="btn btn-success btn-sm mb-0 me-2">Daftar Sekarang</a>
+        role="alert">
+        <div>
+            <h4 class="text-dark">Pendaftaran Dibuka!</h4>
+            <p class="m-0 pe-3">Bergabunglah bersama kami di LPK MPK KOKEN dan raih kesempatan magang ke Jepang.</p>
+        </div>
+        <div class="d-flex mt-3 mt-lg-0">
+            <a href="https://wa.me/6285647523100" class="btn btn-success btn-sm mb-0 me-2">Daftar Sekarang</a>
 
-        <div class="position-absolute end-0 top-0 mt-n3 me-n3">
-            <button type="button" class="btn btn-danger btn-round btn-sm mb-0" data-bs-dismiss="alert"
-                aria-label="Close">
-                <span aria-hidden="true"><i class="bi bi-x-lg"></i></span>
-            </button>
+            <div class="position-absolute end-0 top-0 mt-n3 me-n3">
+                <button type="button" class="btn btn-danger btn-round btn-sm mb-0" data-bs-dismiss="alert"
+                    aria-label="Close">
+                    <span aria-hidden="true"><i class="bi bi-x-lg"></i></span>
+                </button>
+            </div>
         </div>
     </div>
-</div>
 
     <!-- Admission alert box END -->
 
@@ -806,28 +1044,36 @@ Footer END -->
     <!-- Template Functions -->
     <script src="assets/js/functions.js"></script>
     <script src="assets/vendor/tiny-slider/tiny-slider.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    tns({
-      container: '.tiny-slider-inner',
-      items: 4,
-      slideBy: 1,
-      autoplay: true,
-      autoplayButtonOutput: false,
-      controls: false,
-      nav: false,
-      gutter: 20,
-      mouseDrag: true,
-      responsive: {
-        0: { items: 1 },
-        576: { items: 2 },
-        992: { items: 3 },
-        1200: { items: 3 }
-      }
-    });
-  });
-</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            tns({
+                container: '.tiny-slider-inner',
+                items: 4,
+                slideBy: 1,
+                autoplay: true,
+                autoplayButtonOutput: false,
+                controls: false,
+                nav: false,
+                gutter: 20,
+                mouseDrag: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    576: {
+                        items: 2
+                    },
+                    992: {
+                        items: 3
+                    },
+                    1200: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
 
 </body>
 
